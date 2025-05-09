@@ -21,7 +21,7 @@ const Home = () => {
       
       {/* Recent Work */}
       <Recent />
-sad
+
       {/* Manage Content */}
       <Manage />
 
