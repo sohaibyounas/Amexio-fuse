@@ -42,7 +42,7 @@ const Recent = () => {
           {workItems.map((item, index) => (
             <div
               key={index}
-              className="bg-[#ddeaf7] rounded-[40px] p-12 flex items-center relative overflow-hidden min-h-[320px] mb-10 group"
+              className="bg-[#ddeaf7] rounded-[20px] p-12 flex items-center relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
             >
               <div className="max-w-[420px] z-10">
                 <div className="text-4xl font-serif font-semibold mb-4 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">

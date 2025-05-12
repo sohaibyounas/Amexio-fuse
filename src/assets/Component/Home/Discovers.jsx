@@ -5,9 +5,17 @@ const Discovers = () => {
     <>
       {/* Discover Services */}
       <div className="py-10 bg-[#F3F7FB]">
-        <div className="flex items-center justify-between px-10">
-          <h1 className="font-semibold text-[50px]">How we can help</h1>
-          <button className="bg-blue-950 text-white rounded-[25px] p-3">
+        <div>
+          
+        </div>
+        <div className="flex items-center justify-between px-10 group">
+          <h1 className="font-semibold text-[50px] group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
+            How we can help
+          </h1>
+        </div>
+        {/* button */}
+        <div>
+          <button className="bg-blue-950 text-white rounded-[25px] p-3 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
             Discover all our services
           </button>
         </div>

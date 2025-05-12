@@ -8,6 +8,7 @@ const Hero = () => {
         className="absolute inset-0 bg-no-repeat bg-contain bg-left-bottom opacity-50 block lg:hidden"
         style={{ backgroundImage: `url(${hero})` }}
       ></div>
+
       {/* hero section */}
       <div className="mt-10 flex justify-between items-center w-full px-2">
         <div className="cursor-pointer">
@@ -25,6 +26,7 @@ const Hero = () => {
             smarter, faster, and more affordable.
           </p>
         </div>
+        
         {/* image */}
         <div className="hidden lg:block">
           <img
@@ -36,7 +38,7 @@ const Hero = () => {
       </div>
 
       {/* SubText */}
-      <div className="flex items-center rounded-[25px] w-[400px] max-w-xl ml-[35px] mt-10 mb-15 bg-[#FFC256] p-3 ">
+      <div className="group flex items-center rounded-[25px] w-[400px] max-w-xl ml-[35px] mt-10 mb-15 bg-[#FFC256] p-3 cursor-pointer ">
         <div className="pl-[5px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +46,7 @@ const Hero = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6"
+            className="size-6 transition-transform duration-300 ease-in-out group-hover:scale-75 group-hover:animate-ping"
           >
             <path
               strokeLinecap="round"
@@ -53,7 +55,7 @@ const Hero = () => {
             />
           </svg>
         </div>
-        <p className="font-medium pl-[10px]">
+        <p className="font-medium pl-[10px] transition-transform duration-300 ease-in-out group-hover:translate-x-1">
           Talk to us about your content challenge
         </p>
       </div>
