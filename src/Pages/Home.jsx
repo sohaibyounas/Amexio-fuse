@@ -19,25 +19,25 @@ const Home = () => {
       {/* hero section */}
       <Hero />
       
-      {/* Recent Work */}
+      {/* Recent Work Section */}
       <Recent />
 
-      {/* Manage Content */}
+      {/* Manage Content Section */}
       <Manage />
 
-      {/* Discover Services */}
+      {/* Discover Services Section */}
       <Discovers />
 
-      {/* Insights */}
+      {/* Insights Section */}
       <Insights />
 
-      {/* Core Technologies */}
+      {/* Core Technologies Section */}
       <Technology />
 
       {/* Let's Talk Section */}
       <Talk />
 
-      {/* footer */}
+      {/* footer Section */}
       <Footer />
 
     </div>

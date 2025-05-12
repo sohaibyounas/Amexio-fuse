@@ -1,5 +1,6 @@
 // import React from "react";
-import logo from "../../images/logo.jpg";
+import React from "react";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <header>
         <div className="flex items-center justify-between px-8 py-6">
           <a href="/Home">
-            <img src={logo} alt="Home Logo" style={{ width: "180px" }} />
+            <Logo />
           </a>
           <nav>
             <ul className="flex justify-center space-x-10">

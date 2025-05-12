@@ -14,13 +14,13 @@ const Manage = () => {
             <h1 className="font-medium text-[40px]">
               Managing content at scale can be challenging
             </h1>
-            <p className="font-light text-[20px] w-200 pb-5">
+            <p className="font-light text-[20px] w-full mx-w-200 pb-5">
               As your digital channels expand, content volumes increase, and
               more teams get involved in your content workflows, content
               operations become more complex. Governance get more challenging,
               and finding and discovering content gets more time-consuming.
             </p>
-            <p className="font-light text-[20px] w-200">
+            <p className="font-light text-[20px] w-full mx-w-200">
               Eventually, these factors lead to inconsistent, out-of-date,
               hard-to-access, and slow experiences for your customers.
             </p>
