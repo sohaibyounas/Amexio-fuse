@@ -33,11 +33,10 @@ const Discovers = () => {
                 Digital Experience Platform
               </span>
               you can rely on to curate, manage, and optimize your digital
-              experiences in an
-              <span Experience Platform>
-                efficient
-              </span>
-              and <span className="font-bold px-1">cost-effective</span> way.
+              experiences in an Experience Platform
+              <span className="font-bold px-1">efficient</span>
+              and
+              <span className="font-bold px-1">cost-effective</span> way.
             </p>
             <p className="text-[20px] pt-10 ">
               Turning your content into
