@@ -10,7 +10,7 @@ const Logo = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="white"
-            strokeWidth="3"
+            strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
             className="w-full h-full"
@@ -23,10 +23,10 @@ const Logo = () => {
 
       {/* Text */}
       <div className="flex items-center space-x-1">
-        <span className="text-white font-bold text-xl tracking-widest hover:text-sky-700">
+        <span className="text-white font-bold md:text-[30px] lg:text-[20px] tracking-widest hover:text-sky-700">
           AMEXIO
         </span>
-        <span className="text-orange-600 font-cursive text-2xl italic">
+        <span className="text-orange-600 font-cursive text-2xl italic md:text-[30px]">
           fuse
         </span>
       </div>

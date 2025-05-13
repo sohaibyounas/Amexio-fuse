@@ -24,9 +24,10 @@ const workItems = [
 
 const Recent = () => {
   return (
-    <div className="bg-[#F3F7FB] w-[97%] py-10 sm:py-16 md:py-[70px] rounded-r-[10px]">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-[300px_minmax(900px,_1fr)_100px] gap-0 items-start">
-        <div className="flex flex-col items-start pl-10 lg:sticky top-0 z-10 md:pb-20 md:py-0 lg:top-[30%] lg-bg-transparent">
+    <div className="bg-[#F3F7FB] w-[100%] py-10 sm:py-16 md:py-[70px]">
+      <div className="mx-auto grid sm:grids-1 md:grid-cols-1 lg:grid-cols-[30%_70%] gap-0 items-start">
+        {/* recent work */}
+        <div className="flex flex-col items-start pl-10 lg:static xl:sticky top-0 z-10 md:pb-20 md:py-0 lg:top-[30%] lg-bg-transparent">
           <div className="font-bold text-3x1 lg:text-3xl sm:text-4xl md:text-[50px] text-[60px] mb-8 leading-tight hover:text-[#ed6c25] cursor-pointer">
             Recent work
           </div>
@@ -42,7 +43,7 @@ const Recent = () => {
           {workItems.map((item, index) => (
             <div
               key={index}
-              className="bg-[#ddeaf7] rounded-[20px] p-12 flex items-center relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
+              className="bg-[#ddeaf7] rounded-[20px] p-6 sm:p-8 md:p-10 lg:p-12 flex items-center relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
             >
               <div className="max-w-[420px] z-10">
                 <div className="text-4xl font-serif font-semibold mb-4 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
@@ -56,7 +57,7 @@ const Recent = () => {
               <img
                 src={item.image}
                 alt="ai image"
-                className="absolute top-0 right-0 h-full w-[60%] object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+                className="absolute top-0 right-0 h-full w-[60%] md:w-[50%] sm:w-[70%] object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
                 style={{
                   clipPath:
                     "polygon(54.806% .062%, 53.272% .408%, 51.853% 1.125%, 50.559% 2.116%, 49.402% 3.286%, 48.392% 4.539%, 47.541% 5.779%, 46.86% 6.911%, 46.36% 7.837%, 46.052% 8.464%, 45.947% 8.694%, -.036% 100%, 99.927% 99.938%, 100% 99.938%, 100% .041%, 54.806% .041%)"
@@ -65,6 +66,7 @@ const Recent = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

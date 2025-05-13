@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden min-h-[300px] lg:bg-none">
       <div
-        className="absolute bg-no-repeat bg-contain bg-left-bottom opacity-50 block lg:hidden"
+        className="absolute bg-no-repeat bg-contain bg-left-bottom opacity-40 block md:hidden"
         style={{ backgroundImage: `url(${hero})` }}
       ></div>
 
@@ -26,7 +26,7 @@ const Hero = () => {
             smarter, faster, and more affordable.
           </p>
         </div>
-        
+
         {/* image */}
         <div className="hidden lg:block">
           <img
