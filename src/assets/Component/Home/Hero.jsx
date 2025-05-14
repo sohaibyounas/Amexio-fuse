@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="cursor-pointer">
             <h1 className="text-white ml-6 text-[35px] sm:text-[65px] font-bold max-w-[650px]">
               Connecting the dots, from
-              <span className=" text-[45px] sm:text-[65px] text-[#FFC256] font-bold px-3">
+              <span className=" text-[35px] sm:text-[65px] text-[#FFC256] font-bold px-3">
                 content
               </span>
               to experience.
@@ -23,7 +23,7 @@ const Hero = () => {
             <p className="text-white text-[28px] font-medium pl-8 pt-10 max-w-[650px]">
               AmeXio Fuse helps you to optimize your content operations, making
               your
-              <span className="text-[#FFC256] px-2 ">customer experiences</span>
+              <span className="text-[#FFC256] px-2">customer experiences</span>
               smarter, faster, and more affordable.
             </p>
           </div>
