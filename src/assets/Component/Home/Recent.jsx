@@ -24,28 +24,29 @@ const workItems = [
 
 const Recent = () => {
   return (
-    <div className="bg-[#F3F7FB] w-[100%] py-10 sm:py-16 md:py-[70px]">
-      <div className="mx-auto grid sm:grids-1 md:grid-cols-1 lg:grid-cols-[30%_70%] gap-0 items-start">
-        {/* recent work */}
-        <div className="flex flex-col items-start pl-10 lg:static xl:sticky top-0 z-10 md:pb-20 md:py-0 lg:top-[30%] lg-bg-transparent">
-          <div className="font-bold text-3x1 lg:text-3xl sm:text-4xl md:text-[50px] text-[60px] mb-8 leading-tight hover:text-[#ed6c25] cursor-pointer">
+    <div className="bg-[#F3F7FB] w-[100%] lg:w-[98%] rounded-0 lg:rounded-r-[20px] py-10 sm:py-16 md:py-[70px]">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-[100%] xl:grid-cols-[20%_80%] gap-0 items-start px-4 sm:px-6 lg:px-8">
+        {/* Recent Work */}
+        <div className="w-full flex flex-col items-start pl-0 sm:pl-10 lg:static xl:sticky top-0 z-10 md:pb-20 md:py-0 lg:top-[30%] lg-bg-transparent">
+          <div className="font-bold text-3x1 lg:text-3xl sm:text-4xl text-[40px] sm:[50px] md:text-[50px] lg-text-[55px] mb-4 sm:mb-8 leading-tight hover:text-[#ed6c25] cursor-pointer">
             Recent work
           </div>
           <a
             href="/Home"
-            className="border-2 border-[#0a2239] rounded-full px-4 py-3 text-lg font-medium hover:bg-[#DBE5ED] transition"
+            className="mb-6 sm:mb-0 border-2 border-[#0a2239] rounded-full px-4 py-3 text-lg font-medium hover:bg-[#DBE5ED] transition"
           >
             Discover all our work
           </a>
         </div>
 
-        <div>
+        {/* Work Details */}
+        <div className="md:px-[25px] lg:px-10 w-full ">
           {workItems.map((item, index) => (
             <div
               key={index}
-              className="bg-[#ddeaf7] rounded-[20px] p-6 sm:p-8 md:p-10 lg:p-12 flex items-center relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
+              className="bg-[#ddeaf7] rounded-[20px] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
             >
-              <div className="max-w-[420px] z-10">
+              <div className="w-full z-10">
                 <div className="text-4xl font-serif font-semibold mb-4 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
                   {item.title}
                 </div>
@@ -54,19 +55,20 @@ const Recent = () => {
                 </div>
                 <p className="pt-2">Read the full case </p>
               </div>
-              <img
-                src={item.image}
-                alt="ai image"
-                className="absolute top-0 right-0 h-full w-[60%] md:w-[50%] sm:w-[70%] object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
-                style={{
-                  clipPath:
-                    "polygon(54.806% .062%, 53.272% .408%, 51.853% 1.125%, 50.559% 2.116%, 49.402% 3.286%, 48.392% 4.539%, 47.541% 5.779%, 46.86% 6.911%, 46.36% 7.837%, 46.052% 8.464%, 45.947% 8.694%, -.036% 100%, 99.927% 99.938%, 100% 99.938%, 100% .041%, 54.806% .041%)"
-                }}
-              />
+              <div>
+                <img
+                  src={item.image}
+                  alt="ai image"
+                  className="absolute top-0 right-0 h-full w-[60%] sm:w-[70%] md:w-[50%] object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+                  style={{
+                    clipPath:
+                      "polygon(54.806% .062%, 53.272% .408%, 51.853% 1.125%, 50.559% 2.116%, 49.402% 3.286%, 48.392% 4.539%, 47.541% 5.779%, 46.86% 6.911%, 46.36% 7.837%, 46.052% 8.464%, 45.947% 8.694%, -.036% 100%, 99.927% 99.938%, 100% 99.938%, 100% .041%, 54.806% .041%)",
+                  }}
+                />
+              </div>
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );
