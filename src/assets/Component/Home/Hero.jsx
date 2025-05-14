@@ -13,7 +13,7 @@ const Hero = () => {
         {/* hero section */}
         <div className="mt-10 flex justify-between items-center w-full px-2">
           <div className="cursor-pointer">
-            <h1 className="text-white ml-6  text-[45px] sm:text-[65px] font-bold max-w-[650px]">
+            <h1 className="text-white ml-6 text-[35px] sm:text-[65px] font-bold max-w-[650px]">
               Connecting the dots, from
               <span className=" text-[45px] sm:text-[65px] text-[#FFC256] font-bold px-3">
                 content
