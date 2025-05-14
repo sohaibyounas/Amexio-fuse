@@ -8,7 +8,7 @@ const Discovers = () => {
         <div className="flex flex-col justify-between text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center justify-between md:justify-between w-full px-4 sm:px-6 lg:px-8 mb-8">
             <div className="w-full md:w-auto mb-4 md:mb-0">
-              <h1 className="font-normal text-[50px] hover:text-[#ed6c25] hover:decoration-secondary hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
+              <h1 className="font-normal text-[40px] sm:text-[50px] hover:text-[#ed6c25] hover:decoration-secondary hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
                 How we can help
               </h1>
             </div>
@@ -47,7 +47,7 @@ const Discovers = () => {
 
         {/* Values */}
         <div className="py-12 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 text-center">
             {steps.map((step, index) => (
               <div
                 key={index}

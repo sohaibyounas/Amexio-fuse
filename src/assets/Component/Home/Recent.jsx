@@ -27,7 +27,7 @@ const Recent = () => {
     <div className="bg-[#F3F7FB] w-[100%] lg:w-[98%] rounded-0 lg:rounded-r-[20px] py-10 sm:py-16 md:py-[70px]">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-[100%] xl:grid-cols-[20%_80%] gap-0 items-start px-4 sm:px-6 lg:px-8">
         {/* Recent Work */}
-        <div className="w-full flex flex-col items-start pl-0 sm:pl-10 lg:static xl:sticky top-0 z-10 md:pb-20 md:py-0 lg:top-[30%] lg-bg-transparent">
+        <div className="w-full flex flex-col items-start pl-0 sm:pl-10 lg:static xl:sticky top-0 z-10 mb-2 sm:mb-20 md:pb-20 md:py-0 lg:top-[30%] lg-bg-transparent">
           <div className="font-bold text-3x1 lg:text-3xl sm:text-4xl text-[40px] sm:[50px] md:text-[50px] lg-text-[55px] mb-4 sm:mb-8 leading-tight hover:text-[#ed6c25] cursor-pointer">
             Recent work
           </div>
@@ -47,7 +47,7 @@ const Recent = () => {
               className="bg-[#ddeaf7] rounded-[20px] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
             >
               <div className="w-full z-10">
-                <div className="text-4xl font-serif font-semibold mb-4 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
+                <div className="text-4xl font-serif font-normal sm:font-semibold mb-4 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
                   {item.title}
                 </div>
                 <div className="text-lg text-black font-normal">

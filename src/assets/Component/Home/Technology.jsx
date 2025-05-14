@@ -8,10 +8,10 @@ const Technology = () => {
   return (
     <>
       {/* Core Technologies */}
-      <div className="container mx-auto text-center pt-[170px] pb-[88px] px-0 md:px-2">
+      <div className="container mx-auto text-center pt-[70px] sm:pt-[100px] md:pt-[120px] lg:pt-[100px] pb-[88px] px-0 md:px-2">
         {/* Heading and Subheading  */}
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+        <div className="px-10">
+          <h1 className="text-[30px] md:text-[40px] text-3x1 sm:text-4xl md:text-5xl font-bold md:mb-8 text-white">
             Core <span className="text-[#FFC256]"> technologies </span>
             we trust upon
           </h1>
@@ -24,7 +24,7 @@ const Technology = () => {
         </div>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-5 lg:gap-2 max-w-3xl mx-auto justify-items-center items-center">
+        <div className="flex flex-cols-1 sm:flex-cols-2 md:flex-cols-2 lg:flex:cols-1 md:gap-5 lg:gap-20 max-w-3xl mx-auto justify-items-center items-center">
           {tech.map((item, index) => (
             <div key={index} className="flex flex-col">
               <div className="flex flex-col items-center">
