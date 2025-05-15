@@ -3,12 +3,14 @@ import hero from "../../images/home-bg.png";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden min-h-[300px] lg:bg-none">
+    <div className="relative overflow-hidden">
       <div className="pb-10">
         <div
           className="absolute bg-no-repeat bg-contain bg-left-bottom opacity-50 block lg:hidden"
           style={{ backgroundImage: `url(${hero})` }}
-        ></div>
+        >
+
+        </div>
 
         {/* hero section */}
         <div className="mt-10 flex justify-between items-center w-full px-2">
@@ -60,6 +62,7 @@ const Hero = () => {
             Talk to us about your content challenge
           </p>
         </div>
+        
       </div>
     </div>
   );
