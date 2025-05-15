@@ -39,8 +39,8 @@ const Hero = () => {
         </div>
 
         {/* SubText */}
-        <div className="group flex items-center rounded-[50px] sm:rounded-[25px] w-[300px] sm:w-[400px] max-w-xl ml-[35px] mt-10 mb-15 bg-[#FFC256] p-3 cursor-pointer ">
-          <div className="pl-0 sm:pl-0 md:pl-[5px] hidden sm:hidden md:block">
+        <div className="group flex items-center rounded-[50px] sm:rounded-[25px] w-[270px] sm:w-[400px] max-w-xl ml-[35px] mt-10 mb-15 bg-[#FFC256] p-3 cursor-pointer ">
+          <div className="pl-0 md:pl-[5px] hidden sm:hidden md:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
