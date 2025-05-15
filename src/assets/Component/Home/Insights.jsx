@@ -11,7 +11,7 @@ const Insights = () => {
       {/* Insights */}
       <div className="bg-[#F3F7FB] lg:w-full xl:w-[92%] pt-20 lg:rounded-0 xl:rounded-r-[10px] px-10 text-[45px] font-semibold lg:mt-0 xl:mt-40">
         <div className="group">
-          <h1 className="font-normal hover:text-[#ed6c25] hover:decoration-secondary hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
+          <h1 className="text-[30px] font-semibold hover:text-[#ed6c25] hover:decoration-secondary hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
             Latest insights
           </h1>
         </div>
