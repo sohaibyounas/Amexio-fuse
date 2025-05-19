@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +12,16 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  // uselocation for active link
+  const location = useLocation();
+  
+
   return (
     <>
       <div className="bg-[#04273F] md:pt-10 lg:pt-0">
         <header>
           {/* Desktop Menu */}
-          <div className="flex items-center justify-between px-3 sm:px-8 py-2 md:px-4 md:py-0 lg:px-8 lg:py-6 ">
+          <div className="flex items-center justify-between px-5 sm:px-8 py-5 md:px-4 md:py-0 lg:px-8 lg:py-6 ">
             {/* logo */}
             <div className="sm:pt-4 md:pt-0">
               <Link to="/Home">
@@ -28,46 +32,20 @@ const Header = () => {
             {/* desktop icons */}
             <nav className="hidden md:block">
               <ul className="flex justify-center md:space-x-6 lg:space-x-10">
-                <li>
+                {navItems.map((item) => (
+                <li key={item.path} className="text-center">
                   <Link
-                    to="/Services"
-                    className="text-white hover:text-blue-200 font-bold text-[22px]"
+                    to={item.path}
+                    className="text-white font-bold text-[20px] relative hover:text-blue-300"
                   >
-                    Services
+                    {item.name}
+                    {/* Dot under current menu */}
+                    {location.pathname === item.path && (
+                      <span className="block w-full h-[2px] bg-[#ED6C25] rounded-full mx-auto mt-1"></span>
+                    )}
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/Insights"
-                    className="text-white hover:text-blue-200 font-bold text-[22px]"
-                  >
-                    Insights
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/Work"
-                    className="text-white hover:text-blue-200 font-bold text-[22px]"
-                  >
-                    Work
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/About"
-                    className="text-white hover:text-blue-200 font-bold text-[22px]"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/Contact"
-                    className="text-white hover:text-blue-200 font-medium text-[22px]"
-                  >
-                    Contact
-                  </Link>
-                </li>
+              ))}
               </ul>
             </nav>
 
@@ -76,13 +54,13 @@ const Header = () => {
               {/* icon */}
               {isOpen ? (
                 <RxCross2
-                  size={25}
+                  size={30}
                   style={{ color: "white" }}
                   onClick={toggleMenu}
                 />
               ) : (
                 <FaBars
-                  size={20}
+                  size={25}
                   style={{ color: "white" }}
                   onClick={toggleMenu}
                 />
@@ -121,3 +99,11 @@ const Header = () => {
 };
 
 export default Header;
+
+const navItems = [
+    { name: "Services", path: "/Services" },
+    { name: "Insights", path: "/Insights" },
+    { name: "Work", path: "/Work" },
+    { name: "About", path: "/About" },
+    { name: "Contact", path: "/Contact" },
+  ];

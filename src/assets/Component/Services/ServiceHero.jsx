@@ -12,7 +12,7 @@ const ServiceHero = ({ data }) => {
         <div className="pb-10">
           {/* links */}
           <div>
-            <ul className="flex items-center text-white text-[20px] font-normal px-10 group gap-3">
+            <ul className="flex items-center text-white text-[20px] font-normal pt-5 sm:pt-10 md:pt-10 px-5 sm:px-10 md:px-5 lg:px-10 group gap-3">
               <li>
                 <Link
                   to="/Home"
@@ -35,12 +35,12 @@ const ServiceHero = ({ data }) => {
           {/* hero section */}
           <div className="mt-5 flex justify-between items-center w-full px-2 text-white">
             {/* heading */}
-            <div className="cursor-pointer px-7 w-full">
-              <h1 className="text-[76px] font-bold leading-[99px]">
+            <div className="cursor-pointer px-5 sm:px-5 md:px-3 lg:px-7 w-full">
+              <h1 className="text-[45px] sm:text-[50px] md:text-[76px] font-bold leading-[99px]">
                 {data.title}
               </h1>
               {/* sub text */}
-              <p className="text-[28px] leading-[36px] font-medium py-10 max-w-[800px]">
+              <p className="text-[28px] leading-[36px] font-normal sm:font-medium py-10 md:mx-w-[1000px] lg:max-w-[800px]">
                 {parts.map((part, index) =>
                   index % 2 === 1 ? ( // odd indices are inside slashes
                     <span key={index} className="text-[#FFC256] px-1">
