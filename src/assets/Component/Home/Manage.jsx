@@ -19,19 +19,19 @@ const Manage = () => {
               <h1 className="font-semibold text-[45px] sm:text-[40px] md:text-[40px] lg:text-[44px] pb-5 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out md:w-[80%] lg:max-w-[70%] ">
                 Managing content at scale can be challenging
               </h1>
-              <div className="pr-0 sm:pr-[25px] w-full">
-                <p className="font-nomral text-[20px] pb-5">
-                  As your digital channels expand, content volumes increase, and
-                  more teams get involved in your content workflows, content
-                  operations become more complex. Governance gets more
-                  challenging, and finding and discovering content gets more
-                  time-consuming.
-                </p>
-                <p className="font-normal text-[20px]">
-                  Eventually, these factors lead to inconsistent, out-of-date,
-                  hard-to-access, and slow experiences for your customers.
-                </p>
-              </div>
+                <div className="pr-0 sm:pr-[25px] w-full">
+                  <p className="font-nomral text-[20px] pb-5">
+                    As your digital channels expand, content volumes increase, and
+                    more teams get involved in your content workflows, content
+                    operations become more complex. Governance gets more
+                    challenging, and finding and discovering content gets more
+                    time-consuming.
+                  </p>
+                  <p className="font-normal text-[20px]">
+                    Eventually, these factors lead to inconsistent, out-of-date,
+                    hard-to-access, and slow experiences for your customers.
+                  </p>
+                </div>
             </div>
 
             {/* card */}

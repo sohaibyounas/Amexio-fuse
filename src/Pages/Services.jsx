@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import Header from "../assets/Component/Home/Header";
+import ServiceHero from "../assets/Component/Services/ServiceHero";
 
 const Services = () => {
-    return (
-        <div>
-            <h1 className='text-center text-green-400'>Services Page</h1>
-        </div>
-    )
-}
+  return (
+    <div className="bg-[#04273F]">
+      {/* Header */}
+      <Header />
 
-export default Services
+      {/* Hero */}
+      <ServiceHero />
+    </div>
+  );
+};
+
+export default Services;

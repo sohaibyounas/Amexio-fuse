@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,44 +29,44 @@ const Header = () => {
             <nav className="hidden md:block">
               <ul className="flex justify-center md:space-x-6 lg:space-x-10">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/Services"
                     className="text-white hover:text-blue-200 font-bold text-[22px]"
                   >
-                    Service
-                  </a>
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/Services"
+                  <Link
+                    to="/Insights"
                     className="text-white hover:text-blue-200 font-bold text-[22px]"
                   >
                     Insights
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/Work"
+                  <Link
+                    to="/Work"
                     className="text-white hover:text-blue-200 font-bold text-[22px]"
                   >
                     Work
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/About"
+                  <Link
+                    to="/About"
                     className="text-white hover:text-blue-200 font-bold text-[22px]"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/Contact"
+                  <Link
+                    to="/Contact"
                     className="text-white hover:text-blue-200 font-medium text-[22px]"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -87,7 +88,6 @@ const Header = () => {
               )}
             </div>
           </div>
-          
 
           {/* Mobile Menu */}
           {isOpen && (
@@ -95,25 +95,24 @@ const Header = () => {
               <div className="block md:hidden px-7">
                 <ul className="flex flex-col items-end gap-4 text-white font-bold text-[22px] hover:text-blue-200 animate-pulse">
                   <li>
-                    <a href="/">Service</a>
+                    <Link to="/Services">Services</Link>
                   </li>
                   <li>
-                    <a href="/Services">Insights</a>
+                    <Link to="/Insights">Insights</Link>
                   </li>
                   <li>
-                    <a href="/Work">Work</a>
+                    <Link to="/Work">Work</Link>
                   </li>
                   <li>
-                    <a href="/About">About</a>
+                    <Link to="/About">About</Link>
                   </li>
                   <li>
-                    <a href="/Contact">Contact</a>
+                    <Link to="/Contact">Contact</Link>
                   </li>
                 </ul>
               </div>
             </div>
           )}
-          
         </header>
       </div>
     </>
