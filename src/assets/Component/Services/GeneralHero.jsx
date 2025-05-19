@@ -26,7 +26,6 @@ const GeneralHero = () => {
 
           {/* hero section */}
           <div className="mt-10 flex justify-between items-center w-full px-2">
-            {/* Text Area */}
 
             {/* image */}
             <div className="hidden lg:block">

@@ -1,17 +1,71 @@
-import React from 'react';
-import GeneralHero from '../Services/GeneralHero';
+import React from "react";
+import hero from "../../images/home-bg.png";
+import { FaAngleRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
-const ServiceHero = () => {
+const ServiceHero = ({ data }) => {
+  const parts = data.para.split(/\/(.*?)\//);
+
   return (
-    <div>
-      <GeneralHero />
-      {/* Text */}
-      <div className="text-white">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro, expedita nemo quo fuga quaerat et distinctio atque harum officia esse doloremque accusamus repellat accusantium, voluptatibus minus aut asperiores tempora?</p>
+    <>
+      <div className="relative overflow-hidden">
+        <div className="pb-10">
+          {/* links */}
+          <div>
+            <ul className="flex items-center text-white text-[20px] font-normal px-10 group gap-3">
+              <li>
+                <Link
+                  to="/Home"
+                  className="group-hover:text-[#FFC256] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out underline"
+                >
+                  Home
+                </Link>
+              </li>
+              <FaAngleRight size={20} />
+              <li>
+                <a href={data.link}>{data.linkText}</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="absolute bg-no-repeat bg-contain bg-left-bottom opacity-40 block lg:hidden"
+            style={{ backgroundImage: `url(${hero})` }}
+          ></div>
+
+          {/* hero section */}
+          <div className="mt-5 flex justify-between items-center w-full px-2 text-white">
+            {/* heading */}
+            <div className="cursor-pointer px-7 w-full">
+              <h1 className="text-[76px] font-bold leading-[99px]">
+                {data.title}
+              </h1>
+              {/* sub text */}
+              <p className="text-[28px] leading-[36px] font-medium py-10 max-w-[800px]">
+                {parts.map((part, index) =>
+                  index % 2 === 1 ? ( // odd indices are inside slashes
+                    <span key={index} className="text-[#FFC256] px-1">
+                      {part}
+                    </span>
+                  ) : (
+                    part
+                  )
+                )}
+              </p>
+            </div>
+
+            {/* image */}
+            <div className="hidden lg:block">
+              <img
+                src={hero}
+                alt="heroimage"
+                className="w-[50rem] h-auto object-contain filter brightness-0 invert absolute -top-0 left-175 text-blue-700"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
 export default ServiceHero;

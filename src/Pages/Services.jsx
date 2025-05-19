@@ -9,9 +9,16 @@ const Services = () => {
       <Header />
 
       {/* Hero */}
-      <ServiceHero />
+      <ServiceHero data={Data} />
     </div>
   );
 };
 
 export default Services;
+
+const Data = {
+  linkText: "Services",
+  link: "/Services",
+  title: "Services",
+  para: "For over 20 years, we have been /partnering/ with our ambitious clients, turning their content into value through highly scalable content platforms.",
+};

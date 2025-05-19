@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import "../assets/css/style.css";
 import Header from "../assets/Component/Home/Header";
 import Hero from "../assets/Component/Home/Hero";
