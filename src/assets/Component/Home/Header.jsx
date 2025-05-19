@@ -20,9 +20,9 @@ const Header = () => {
           <div className="flex items-center justify-between px-3 sm:px-8 py-2 md:px-4 md:py-0 lg:px-8 lg:py-6 ">
             {/* logo */}
             <div className="sm:pt-4 md:pt-0">
-              <a href="/Home">
+              <Link to="/Home">
                 <Logo />
-              </a>
+              </Link>
             </div>
 
             {/* desktop icons */}
@@ -71,6 +71,7 @@ const Header = () => {
               </ul>
             </nav>
 
+            {/* Mobile icon */}
             <div className="block md:hidden ">
               {/* icon */}
               {isOpen ? (
