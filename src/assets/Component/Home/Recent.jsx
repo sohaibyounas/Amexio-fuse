@@ -44,9 +44,9 @@ const Recent = () => {
           {workItems.map((item, index) => (
             <div
               key={index}
-              className="bg-[#ddeaf7] rounded-[20px] p-5 lg:p-12 flex flex-col sm:flex-col md:flex-col lg:flex-row relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
+              className="bg-[#ddeaf7] rounded-[20px] p-0 flex flex-col sm:flex-col md:flex-col lg:flex-row relative overflow-hidden min-h-[320px] mb-10 group shadow-lg"
             >
-              <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[50%] z-10">
+              <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[50%] z-10 p-5">
                 <div className="text-4xl font-serif font-normal sm:font-semibold mb-4 group-hover:text-[#ed6c25] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out">
                   {item.title}
                 </div>
@@ -56,11 +56,12 @@ const Recent = () => {
                 <p className="pt-2">Read the full case </p>
               </div>
 
+              {/* image */}
               <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[75%]">
                 <img
                   src={item.image}
                   alt="ai image"
-                  className="object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+                  className="object-cover w-full h-full shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
                   style={{
                     clipPath:
                       "polygon(54.806% .062%, 53.272% .408%, 51.853% 1.125%, 50.559% 2.116%, 49.402% 3.286%, 48.392% 4.539%, 47.541% 5.779%, 46.86% 6.911%, 46.36% 7.837%, 46.052% 8.464%, 45.947% 8.694%, -.036% 100%, 99.927% 99.938%, 100% 99.938%, 100% .041%, 54.806% .041%)",

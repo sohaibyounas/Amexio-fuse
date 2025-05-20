@@ -24,7 +24,7 @@ const Technology = () => {
         </div>
 
         {/* Logos Grid */}
-        <div className="grid md:max-w-3xl grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-15 md:gap-20 lg:gap-20 mx-auto justify-items-center items-center">
+        <div className="grid md:max-w-3xl grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 sm:gap-15 md:gap-20 lg:gap-20 mx-auto justify-items-center items-center">
           {tech.map((item, index) => (
             <div key={index} className="flex flex-col">
               <div className="flex flex-col items-center">

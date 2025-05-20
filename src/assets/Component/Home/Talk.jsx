@@ -1,5 +1,5 @@
 import React from "react";
-import homebg from "../../images/manage-bg.png";
+import amexio from "../../images/amexio.png";
 import { MdForwardToInbox } from "react-icons/md";
 
 const Talk = () => {
@@ -24,16 +24,43 @@ const Talk = () => {
           </button>
         </div>
 
-        {/* Right: Circular Image and SVG Accent */}
-        <div className="flex-1 flex justify-end items-center relative mt-10 md:mt-0">
-          <div className="relative hidden sm:hidden md:block">
-            <img
-              src={homebg}
-              alt="Amexio"
-              className="w-[300px] h-[300px] md:w-[250px] md:h-[250px] object-cover rounded-full border-4 border-white shadow-lg"
+        {/* Circular Image and SVG Accent */}
+        <div className="relative w-full h-screen hidden md:block">
+          {/* SVG Gradient Lines */}
+          <svg
+            viewBox="0 90 700 600"
+            className="absolute md:top-[190px] lg:top-[180px] md:right-[0px] lg:right-[40px] lg:w-[40rem] z-0"
+          >
+            <defs>
+              <linearGradient
+                id="lineGradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#003B5C" />
+                <stop offset="55%" stopColor="#FF6B35" />
+              </linearGradient>
+            </defs>
+
+            <path
+              d="M 100 700 L 500 100 L 600 100 L 200 700 Z"
+              stroke="url(#lineGradient)"
+              strokeWidth="4"
+              fill="none"
             />
-          </div>
+          </svg>
+
+          {/* Circular Image */}
+          <img
+            src={amexio}
+            alt="AmeXio office"
+            className="absolute top-[15rem] right-[30px] md:w-[15rem] md:h-[15rem] lg:w-[25rem] lg:h-[25rem] rounded-full object-cover border-[6px] border-white z-20 shadow-lg"
+          />
         </div>
+
+        {/*  */}
       </div>
     </>
   );
