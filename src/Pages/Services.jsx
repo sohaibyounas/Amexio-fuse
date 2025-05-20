@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
 import Collaborate from "../assets/Component/Services/Collaborate";
@@ -20,6 +20,10 @@ import Optimize2 from "../assets/images/optimize2.jpg";
 import Optimize3 from "../assets/images/optimize3.jpg";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#04273F]">
       {/* Header */}

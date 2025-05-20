@@ -10,15 +10,31 @@ const Collaborate = () => {
     setActiveTab(index);
   };
 
+  // use state for tab scrolling
+  // const [tabScroll, setTabScroll] = useState(0);
+  // const handleTabScroll = (index) =>
+  //   setTabScroll(index);
+
   return (
     <>
-      <div className="w-full py-10 sm:py-16 md:py-[70px] text-white lg:px-10 text-[30px] font-semibold">
-        <h1>How do we usually collaborate?</h1>
+      <div className="w-full py-10 sm:py-16 md:py-[70px] text-white px-10 font-semibold">
+        <div className="sm:px-10 md:px-10 lg:px-0 md:text-[45px]">
+          <h1 className="sm:text-[45px] text-[55px] sm:font-bold md:font-semibold mb-4">
+            How do we usually collaborate?
+          </h1>
+        </div>
+
         {/* Tabs navigation */}
-        {/* Tabs */}
         <div className="border-b border-gray-200 pt-10">
+          {/* Left Scroll Button */}
+          <button
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 lg:hidden px-2"
+            onClick={() => scrollTabs("left")}
+          >
+            <span className="text-white text-xl">&lsaquo;</span>
+          </button>
           <nav
-            className="-mb-0.5 flex justify-start gap-x-20"
+            className="-mb-0.5 flex justify-start lg:gap-x-20 md:gap-x-9 gap-x-5 overflow-x-auto whitespace-nowrap"
             role="tablist"
             aria-orientation="horizontal"
           >
@@ -29,10 +45,10 @@ const Collaborate = () => {
                 role="tab"
                 aria-selected={activeTab === index}
                 onClick={() => handleTabClick(index)}
-                className={`py-4 px-1 inline-flex items-center gap-x-2 border-b-2 text-sm whitespace-nowrap text-[24px] font-normal cursor-pointer
+                className={`py-4 px-1 inline-flex items-center gap-x-2 border-b-2 text-sm whitespace-nowrap md:text-[20px] lg:text-[24px] font-normal cursor-pointer
                 ${
                   activeTab === index
-                    ? "border-b-4 border-[#ED6C25] rounded-b-lg transition-all duration-300 ease-in-out text-[#ED6C25] font-semibold"
+                    ? "border-b-4 border-[#ED6C25] rounded-b transition-all duration-300 ease-in-out text-[#ED6C25] font-semibold"
                     : "border-transparent text-white hover:text-[#ED6C25]"
                 }
               `}
@@ -41,12 +57,19 @@ const Collaborate = () => {
               </button>
             ))}
           </nav>
+          {/* Right Scroll Button */}
+          <button
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 lg:hidden px-2"
+            onClick={() => scrollTabs("right")}
+          >
+            <span className="text-white text-xl">&rsaquo;</span>
+          </button>
         </div>
 
         {/* Tab Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-start mt-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start mt-10 w-full lg:gap-10">
           {/* active tab content */}
-          <div className="mt-3 w-[50%]">
+          <div className="mt-3 md:w-full lg:w-[50%] md:pl-2 order-2 lg:order-1">
             <p className="text-white text-[20px] mb-4">
               {tabContent[activeTab].para}
             </p>
@@ -59,12 +82,17 @@ const Collaborate = () => {
               ))}
             </ul>
           </div>
-          {/* Collaborate Image */}
-          <div>
-            <img src={CollaborateImage} alt="CollaborateImage" className="rounded-[10px]" />
-          </div>
-        </div>
 
+          {/* Collaborate Image */}
+          <div className="order-1 lg:order-2 w-full lg:w-[50%]">
+            <img
+              src={CollaborateImage}
+              alt="CollaborateImage"
+              className="rounded-[10px] w-[100%]"
+            />
+          </div>
+
+        </div>
       </div>
     </>
   );

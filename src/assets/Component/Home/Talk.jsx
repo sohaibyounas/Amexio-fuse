@@ -56,7 +56,7 @@ const Talk = () => {
           <img
             src={amexio}
             alt="AmeXio office"
-            className="absolute top-[15rem] right-[30px] md:w-[15rem] md:h-[15rem] lg:w-[25rem] lg:h-[25rem] rounded-full object-cover border-[6px] border-white z-20 shadow-lg"
+            className="absolute top-[15rem] md:right-[50px] lg:right-[120px] md:w-[15rem] md:h-[15rem] lg:w-[25rem] lg:h-[25rem] rounded-full object-cover border-[6px] border-white z-20 shadow-lg"
           />
         </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,24 +9,24 @@ const Footer = () => {
       <div className="flex w-[80%] sm:w-100 items-center justify-start px-10 py-10">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 text-white font-medium font-serif text-[25px]">
           <div>
-            <a href="#">Services</a>
+            <Link to="/services">Services</Link>
           </div>
           <div>
-            <a href="#">Insights</a>
+            <Link to="/insights">Insights</Link>
           </div>
           <div>
-            <a href="#">Work</a>
+            <Link to="/work">Work</Link>
           </div>
           <div>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </div>
           <div>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </div>
           <div>
-            <a href="#">
+            <Link to="/">
               <TiSocialLinkedinCircular size={40} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

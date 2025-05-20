@@ -15,7 +15,7 @@ const ServiceHero = ({ data }) => {
             <ul className="flex items-center text-white text-[20px] font-normal pt-5 sm:pt-10 md:pt-10 px-5 sm:px-10 md:px-5 lg:px-10 group gap-3">
               <li>
                 <Link
-                  to="/Home"
+                  to="/"
                   className="group-hover:text-[#FFC256] group-hover:decoration-secondary group-hover:bg-[0%_100%] transition-all duration-300 ease-in-out underline"
                 >
                   Home
