@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
-// import Integrating from "../assets/Component/Services/Integrating";
-import Footer from "../assets/Component/Home/Footer";
+import Collaborate from "../assets/Component/Services/Collaborate";
+import Integrating from "../assets/Component/Services/Integrating";
 import Talk from "../assets/Component/Home/Talk";
+import Footer from "../assets/Component/Home/Footer";
 
 // Strategize images
 import Strategize1 from "../assets/images/strategize1.webp";
@@ -17,8 +18,6 @@ import Design3 from "../assets/images/design3.png";
 import Optimize1 from "../assets/images/optimize1.jpg";
 import Optimize2 from "../assets/images/optimize2.jpg";
 import Optimize3 from "../assets/images/optimize3.jpg";
-import Collaborate from "../assets/Component/Services/Collaborate";
-import Integrating from "../assets/Component/Services/Integrating";
 
 const Services = () => {
   return (
