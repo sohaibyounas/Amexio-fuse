@@ -65,7 +65,7 @@ const Collaborate = () => {
             <span className="text-white text-xl">&rsaquo;</span>
           </button>
         </div>
-
+  
         {/* Tab Content */}
         <div className="flex flex-col lg:flex-row justify-between items-start mt-10 w-full lg:gap-10">
           {/* active tab content */}

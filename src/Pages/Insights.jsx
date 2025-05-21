@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
 import Compose from "../assets/Component/Insights/Compose";
+import Blogs from "../assets/Component/Insights/Blogs";
 
 const Insights = () => {
   return (
@@ -14,6 +15,9 @@ const Insights = () => {
 
       {/* Composability */}
       <Compose />
+
+      {/* Blog Posts */}
+      <Blogs />
     </div>
   );
 };
