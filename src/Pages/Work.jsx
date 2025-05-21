@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
+import Content from "../assets/Component/Work/Content";
 
 const Work = () => {
   return (
@@ -9,6 +10,9 @@ const Work = () => {
       <Header />
       {/* Hero */}
       <ServiceHero data={data} />
+
+      {/* Content */}
+      <Content />
     </div>
   );
 };

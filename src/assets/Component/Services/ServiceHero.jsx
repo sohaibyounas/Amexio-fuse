@@ -35,7 +35,7 @@ const ServiceHero = ({ data }) => {
           {/* hero section */}
           <div className="mt-5 flex justify-between items-center w-full px-2 text-white">
             {/* heading */}
-            <div className="cursor-pointer px-5 sm:px-5 md:px-3 lg:px-7 w-full">
+            <div className="px-5 sm:px-5 md:px-3 lg:px-7 w-full">
               <h1 className="text-[45px] sm:text-[50px] md:text-[76px] font-bold leading-[99px]">
                 {data.title}
               </h1>

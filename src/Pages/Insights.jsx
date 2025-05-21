@@ -3,6 +3,8 @@ import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
 import Compose from "../assets/Component/Insights/Compose";
 import Blogs from "../assets/Component/Insights/Blogs";
+import Footer from "../assets/Component/Home/Footer";
+import Talk from "../assets/Component/Home/Talk";
 
 const Insights = () => {
   return (
@@ -18,6 +20,12 @@ const Insights = () => {
 
       {/* Blog Posts */}
       <Blogs />
+
+      {/* Talks */}
+      <Talk />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

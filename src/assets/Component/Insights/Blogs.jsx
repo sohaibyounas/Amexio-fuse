@@ -53,7 +53,7 @@ const Blogs = () => {
             </div>
           </div>
         ))}
-        <div className="flex items-center justify-center">
+        <div className="col-span-full flex items-center justify-center">
           <p className="border-b-2 border-[#ED6C25] pb-1">
             You've viewed 24 of the 24 blogposts
             <br />
