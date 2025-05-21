@@ -61,7 +61,7 @@ const Recent = () => {
                 <img
                   src={item.image}
                   alt="ai image"
-                  className="object-cover w-full h-full shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+                  className="object-cover w-full h-full shadow-lg scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
                   style={{
                     clipPath:
                       "polygon(54.806% .062%, 53.272% .408%, 51.853% 1.125%, 50.559% 2.116%, 49.402% 3.286%, 48.392% 4.539%, 47.541% 5.779%, 46.86% 6.911%, 46.36% 7.837%, 46.052% 8.464%, 45.947% 8.694%, -.036% 100%, 99.927% 99.938%, 100% 99.938%, 100% .041%, 54.806% .041%)",

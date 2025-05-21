@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Integratingimg from "../../images/Integrating.webp";
+ 
 
 const Integrating = () => {
+ 
+
   return (
     <div className="bg-white">
       <div className="flex flex-col lg:flex-row md:items-start lg:items-center justify-between w-full px-2 sm:px-5 py-10">
@@ -12,7 +15,7 @@ const Integrating = () => {
           </h1>
           <div className="">
             <p className="text-[20px] leading-[30px] text-[#111827] font-normal px-5 pb-5 w-full">
-              At AmeXio, we take a{" "}
+              At AmeXio, we take a 
               <span className="font-bold px-1">holistic</span>
               approach to integrating people, processes, and tools. We go beyond
               just implementation, focusing on three key areas to ensure your

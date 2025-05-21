@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
+import Compose from "../assets/Component/Insights/Compose";
 
 const Insights = () => {
   return (
@@ -10,6 +11,9 @@ const Insights = () => {
 
       {/* Hero */}
       <ServiceHero data={Data} />
+
+      {/* Composability */}
+      <Compose />
     </div>
   );
 };
