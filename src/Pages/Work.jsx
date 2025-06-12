@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
 import Content from "../assets/Component/Work/Content";
+import Talk from "../assets/Component/Home/Talk";
+import Footer from "../assets/Component/Home/Footer";
 
 const Work = () => {
   return (
@@ -13,6 +15,12 @@ const Work = () => {
 
       {/* Content */}
       <Content />
+
+      {/*lets talk */}
+      <Talk />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

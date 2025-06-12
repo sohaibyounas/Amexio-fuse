@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
+import WorkUs from "../assets/Component/About/WorkUs";
+import Talk from "../assets/Component/Home/Talk";
+import Footer from "../assets/Component/Home/Footer";
 
 const About = () => {
   return (
@@ -10,6 +13,15 @@ const About = () => {
 
       {/* Hero */}
       <ServiceHero data={Data} />
+
+      {/* Work With Us */}
+      <WorkUs />
+
+      {/* Lets Talk */}
+      <Talk />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

@@ -9,7 +9,8 @@ import Footer from "../assets/Component/Home/Footer";
 // Strategize images
 import Strategize1 from "../assets/images/strategize1.webp";
 import Strategize2 from "../assets/images/strategize2.webp";
-// DEsign images
+
+// Design images
 import Design1 from "../assets/images/design1.webp";
 import Design2 from "../assets/images/design2.webp";
 import Design3 from "../assets/images/design3.png";

@@ -1,27 +1,6 @@
 import React from "react";
 import Ai from "../../images/AI.png";
 
-const workItems = [
-  {
-    title: "Transforming OECD’s Web Presence",
-    description:
-      "A significant upgrade to OECD’s digital presence, providing a seamless user experience and robust content management workflows. The new platform is dynamic, responsive, and accessible to a global audience.",
-    image: Ai,
-  },
-  {
-    title: "Transforming OECD’s Web Presence",
-    description:
-      "A significant upgrade to OECD’s digital presence, providing a seamless user experience and robust content management workflows. The new platform is dynamic, responsive, and accessible to a global audience.",
-    image: Ai,
-  },
-  {
-    title: "Transforming OECD’s Web Presence",
-    description:
-      "A significant upgrade to OECD’s digital presence, providing a seamless user experience and robust content management workflows. The new platform is dynamic, responsive, and accessible to a global audience.",
-    image: Ai,
-  },
-];
-
 const Recent = () => {
   return (
     <div className="bg-[#F3F7FB] w-[100%] lg:w-[98%] rounded-0 lg:rounded-r-[20px] py-10 sm:py-16 md:py-[70px]">
@@ -77,3 +56,24 @@ const Recent = () => {
 };
 
 export default Recent;
+
+const workItems = [
+  {
+    title: "Transforming OECD’s Web Presence",
+    description:
+      "A significant upgrade to OECD’s digital presence, providing a seamless user experience and robust content management workflows. The new platform is dynamic, responsive, and accessible to a global audience.",
+    image: Ai,
+  },
+  {
+    title: "Transforming OECD’s Web Presence",
+    description:
+      "A significant upgrade to OECD’s digital presence, providing a seamless user experience and robust content management workflows. The new platform is dynamic, responsive, and accessible to a global audience.",
+    image: Ai,
+  },
+  {
+    title: "Transforming OECD’s Web Presence",
+    description:
+      "A significant upgrade to OECD’s digital presence, providing a seamless user experience and robust content management workflows. The new platform is dynamic, responsive, and accessible to a global audience.",
+    image: Ai,
+  },
+];

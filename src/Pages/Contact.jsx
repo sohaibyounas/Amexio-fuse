@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
+import Talk from "../assets/Component/Home/Talk";
+import Footer from "../assets/Component/Home/Footer";
 
 const Contact = () => {
   return (
@@ -10,6 +12,12 @@ const Contact = () => {
 
       {/* Hero */}
       <ServiceHero data={Data} />
+
+      {/* Lets Talk */}
+      <Talk />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
