@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../assets/Component/Home/Header";
 import ServiceHero from "../assets/Component/Services/ServiceHero";
 import Compose from "../assets/Component/Insights/Compose";
@@ -7,6 +7,10 @@ import Footer from "../assets/Component/Home/Footer";
 import Talk from "../assets/Component/Home/Talk";
 
 const Insights = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#04273F]">
       {/* Header */}

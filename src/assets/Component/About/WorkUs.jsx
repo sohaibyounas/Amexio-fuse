@@ -18,8 +18,8 @@ const WorkUs = () => {
             for smooth integration, and use the latest technologies tailored to
             your business domain. By developing a
             <span className="mx-0.5 text-[#FFC256] font-bold">
-              strong partnership
-            </span>{" "}
+              strong partnership`1`
+            </span>
             with your organization, we help you to build a long-term CXM vision,
             ensuring all parts of your CXM ecosystem work together seamlessly.
             Only this way, long-term success can be achieved.

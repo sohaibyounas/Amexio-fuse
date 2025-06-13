@@ -5,27 +5,27 @@ import KBCLogo from "../../images/kbc-logo.png";
 const Content = () => {
   return (
     <>
-      <div class="bg-[#f5f8fb] p-6 md:p-12">
-        <div class="max-w-7xl mx-auto bg-[#f5f8fb] flex flex-col md:flex-col items-center md:items-start gap-8 md:gap-10 lg:gap-6">
+      <div className="bg-[#f5f8fb] p-6 md:p-12">
+        <div className="max-w-7xl mx-auto bg-[#f5f8fb] flex flex-col md:flex-col items-center md:items-start gap-8 md:gap-10 lg:gap-6">
           {workData.map((item, idx) => (
             <React.Fragment key={idx}>
-              <div class="flex gap-[15px] group">
-                <section class="flex-shrink-0 w-full md:w-[40%]">
+              <div className="flex gap-[15px] group">
+                <section className="flex-shrink-0 w-full md:w-[40%]">
                   <img
                     alt={item.alt}
-                    class="w-full h-auto rounded-md object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+                    className="w-full h-auto rounded-md object-cover shadow-lg z-0 scale-105 group-hover:scale-100 transition-transform duration-300 ease-in-out"
                     height="400"
                     src={item.image}
                     width="600"
                   />
                 </section>
-                <section class="w-full md:w-[60%] border-t border-b text-[#D9E8F5] py-6 md:p-12 rounded-md">
-                  <div class="flex items-center justify-between mb-6 text-black">
+                <section className="w-full md:w-[60%] border-t border-b text-[#D9E8F5] py-6 md:p-12 rounded-md">
+                  <div className="flex items-center justify-between mb-6 text-black">
                     <div>
-                      <p class="text-sm text-[#0a4a8f] font-semibold mb-1">
+                      <p className="text-sm text-[#0a4a8f] font-semibold mb-1">
                         {item.company}
                       </p>
-                      <h1 class="text-2xl md:text-3xl font-serif font-normal mb-4 leading-snug">
+                      <h1 className="text-2xl md:text-3xl font-serif font-normal mb-4 leading-snug">
                         {item.title}
                       </h1>
                     </div>
@@ -33,10 +33,10 @@ const Content = () => {
                       <img src={item.logo} alt="Logo" />
                     </div>
                   </div>
-                  <p class="text-base max-w-xl mb-6 leading-relaxed text-black">
+                  <p className="text-base max-w-xl mb-6 leading-relaxed text-black">
                     {item.description}
                   </p>
-                  <ul class="list-disc list-inside max-w-xl space-y-1 mb-8 text-base text-black">
+                  <ul className="list-disc list-inside max-w-xl space-y-1 mb-8 text-base text-black">
                     {item.details.map((detail, i) =>
                       typeof detail === "string" ? (
                         <li key={i}>{detail}</li>
@@ -47,7 +47,7 @@ const Content = () => {
                             <>
                               <a
                                 key={j}
-                                class="underline text-black hover:text-[orangered]"
+                                className="underline text-black hover:text-[orangered]"
                                 href={link.href}
                               >
                                 {link.text}
@@ -60,7 +60,7 @@ const Content = () => {
                     )}
                   </ul>
                   <button
-                    class="bg-[#0a4a8f] text-white text-sm font-semibold py-2 px-6 rounded-full hover:bg-[#083a6a] transition"
+                    className="bg-[#0a4a8f] text-white text-sm font-semibold py-2 px-6 rounded-full hover:bg-[#083a6a] transition"
                     type="button"
                   >
                     {item.button}

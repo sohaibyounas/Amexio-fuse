@@ -36,7 +36,7 @@ const Footer = () => {
         <div>
           <h3 className="pl-10 py-3.5 text-white">
             Copyright © 2024 - AmeXio Fuse is part of
-            <a href="#" className="underline px-2 hover:text-[#D16327]">
+            <a href="/" className="underline px-2 hover:text-[#D16327]">
               AmeXio Group
             </a>
           </h3>
